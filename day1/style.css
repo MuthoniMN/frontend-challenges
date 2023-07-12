@@ -13,6 +13,7 @@ body > section{
     background: white;
     padding: 24px;
     width: 80%;
+    max-width: 640px;
 }
 
 .sectionHeaders{
@@ -107,4 +108,13 @@ input[type="submit"]:hover{
 
 .noDisplay{
     display: none;
+}
+
+@media screen and (max-width: 560px) {
+    .multipleInputs{
+        flex-direction: column;
+    }
+    .multipleInputs input{
+        width: 100%;
+    }
 }
