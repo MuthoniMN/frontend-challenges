@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/0acc85d45b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section>
+        <div class="sectionHeaders">
+            <span class="form active">Flights</span>
+            <span class="form">Hotels</span>
+            <span class="form">Cars</span>
+        </div>
+
+        <form id="flightsForm">
+            <h2>Book a Flight</h2>
+                    <div class="inputWrapper">
+                        <label for="origin">Origin</label>
+                        <input id="origin" type="text" placeholder="Buchares | OTP">
+                    </div>
+                    <div class="inputWrapper">
+                        <label for="destination">Destination</label>
+                        <input id="destination" type="text" placeholder="Tenerife (Canary Islands) | TFS">
+                    </div>
+                <div class="multipleInputs">
+                    <div class="inputWrapper">
+                        <label for="departure">Departure</label>
+                        <input type="date" name="departure" id="departure" placeholder="03-26-2018">
+                    </div>
+                    <div class="inputWrapper">
+                        <label for="arrival">Arrival</label>
+                        <input type="date" name="arrival" id="arrival" placeholder="03-30-2018">
+                    </div>
+                    <div class="inputWrapper">
+                        <label for="passengers">Passengers</label>
+                        <select name="passengers" id="passengers">
+                                    <option value="1 Adult">1 Adult</option>
+                                    <option value="2 Adults">2 Adult</option>
+                                    <option value="1 Adult 1 Child">1 Adult 1 Child</option>
+                                    <option value="2 Adults 1 Child">2 Adults 1 Child</option>
+                                    <option value="2 Adults 2 Children">2 Adults 2 Children</option>
+                                </select>
+                    </div>
+                </div>
+
+                <input type="submit" value="Search">
+                <p>Flexible on Dates?</p>
+        </form>
+
+        <form id="hotelsForm" class="noDisplay">
+            <h2>Hotel Reservation</h2>
+            <div class="inputWrapper">
+                <label for="origin">Hotel Name</label>
+                <input id="origin" type="text" placeholder="Buchares | OTP">
+            </div>
+            <div class="multipleInputs">
+                <div class="inputWrapper">
+                    <label for="departure">Departure</label>
+                    <input type="date" name="departure" id="departure" placeholder="03-26-2018">
+                </div>
+                <div class="inputWrapper">
+                    <label for="arrival">Arrival</label>
+                    <input type="date" name="arrival" id="arrival" placeholder="03-30-2018">
+                </div>
+                <div class="inputWrapper">
+                    <label for="passengers">Passengers</label>
+                    <select name="passengers" id="passengers">
+                                            <option value="1 Adult">1 Adult</option>
+                                            <option value="2 Adults">2 Adult</option>
+                                            <option value="1 Adult 1 Child">1 Adult 1 Child</option>
+                                            <option value="2 Adults 1 Child">2 Adults 1 Child</option>
+                                            <option value="2 Adults 2 Children">2 Adults 2 Children</option>
+                                        </select>
+                </div>
+            </div>
+        
+            <input type="submit" value="Search">
+            <p>Flexible on Dates?</p>
+        </form>
+
+        <form id="carsForm" class="noDisplay">
+            <h2>Car Pickup</h2>
+            <div class="inputWrapper">
+                <label for="origin">Origin</label>
+                <input id="origin" type="text" placeholder="Buchares | OTP">
+            </div>
+            <div class="inputWrapper">
+                <label for="destination">Destination</label>
+                <input id="destination" type="text" placeholder="Tenerife (Canary Islands) | TFS">
+            </div>
+            <div class="multipleInputs">
+                <div class="inputWrapper">
+                    <label for="departure">Departure</label>
+                    <input type="date" name="departure" id="departure" placeholder="03-26-2018">
+                </div>
+                <div class="inputWrapper">
+                    <label for="arrival">Arrival</label>
+                    <input type="date" name="arrival" id="arrival" placeholder="03-30-2018">
+                </div>
+                <div class="inputWrapper">
+                    <label for="passengers">Passengers</label>
+                    <select name="passengers" id="passengers">
+                                            <option value="1 Adult">1 Adult</option>
+                                            <option value="2 Adults">2 Adult</option>
+                                            <option value="1 Adult 1 Child">1 Adult 1 Child</option>
+                                            <option value="2 Adults 1 Child">2 Adults 1 Child</option>
+                                            <option value="2 Adults 2 Children">2 Adults 2 Children</option>
+                                        </select>
+                </div>
+            </div>
+        
+            <input type="submit" value="Search">
+            <p>Flexible on Dates?</p>
+        </form>
+
+    </section>
+
+</body>
+
+</html>
