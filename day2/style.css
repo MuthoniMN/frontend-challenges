@@ -46,8 +46,15 @@ p{
     margin: 0;
     border-radius: 4px;
     text-align: center;
+    cursor: pointer;
 }
 
+
+section p:hover, 
+.active{
+    background: white;
+    color: rgb(22, 22, 161);
+}
 
 .spaceBar{
     width: 40%;
