@@ -92,6 +92,12 @@ nav li a{
 .slideshow img{
     width: 33.3333%;
     height: 250px;
+    transition: all 500ms;
+}
+
+
+.slideshow img:hover{
+    transform: scale(1.2);
 }
 
 .fa-chevron-left{

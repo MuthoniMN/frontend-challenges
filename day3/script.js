@@ -10,7 +10,7 @@ function showSlides() {
 
         if (index === slides.length) {
             slides.forEach((a) => a.classList.remove('noDisplay'))
-            showSlides()
+            setInterval(showSlides(), 10)
         }
     }, 2000)
 }
