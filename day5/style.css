@@ -1,0 +1,65 @@
+body{
+    background: rgb(48, 44, 66);
+    color: rgb(226, 226, 226);
+    font-family: 'Raleway', sans-serif;
+}
+
+header ~ section{
+    display: flex;
+    padding: 32px 48px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    border: none;
+    padding: 6px 24px;
+    color: white;
+    background: rgb(6, 166, 219);
+}
+
+.fa-solid{
+    color: rgb(90, 41, 168);
+}
+
+section + section{
+    margin: 0 48px;
+    gap: 12px;
+    background: rgba(9, 9, 24, 0.527);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input{
+    padding: 4px;
+    width: 50%;
+}
+
+header + section{
+    align-items: center;
+    gap: 24px;
+}
+
+header + section > *{
+    width: 50%;
+}
+
+@media screen and (max-width:600px) {
+    header ~ section{
+        flex-wrap: wrap;
+    }
+    header + section > *{
+        width: 100%;
+    }
+}
