@@ -1,0 +1,83 @@
+.flexBox{
+    display: flex;   
+    justify-content: space-between;
+}
+
+main{
+    width: 420px;
+    background: white;
+    font-family: 'REM', sans-serif;
+}
+
+header{
+    background: rgb(0, 233, 233);
+    padding: 24px;
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+div.highlight{
+    width: 175px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+.noDisplay{
+    display: none;
+}
+
+header > section{
+    display: inline-flex;
+    margin: 24px auto;
+    gap: 16px;
+    overflow-x: hidden;
+}
+
+div.highlight:nth-child(1){
+    background: url("https://images.unsplash.com/photo-1609813744174-a0df83d477fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI4fHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-position: center center;
+}
+
+div.highlight:nth-child(2){
+    background: url("https://images.unsplash.com/photo-1579033014049-f33d9b14d37e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMxfHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-position: center center;
+}
+
+div.highlight:nth-child(3){
+    background: url("https://images.unsplash.com/photo-1620259570543-31964aa22586?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQyfHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-position: center center;
+}
+
+div.highlight:nth-child(4){
+    background: url("https://images.unsplash.com/photo-1688498465616-66cf281e32d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDU1fHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-position: center center;
+}
+
+main > section{
+    padding: 24px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.info span{
+    justify-self: flex-end;
+    color: rgb(97, 93, 93);
+}
+
+img{
+    width: 100%;
+    border-radius: 12px;
+}
