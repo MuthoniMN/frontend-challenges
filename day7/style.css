@@ -1,0 +1,65 @@
+.flexbox{
+    display: flex;
+}
+
+.calendar{
+    background: rgb(61, 60, 60);
+    color: #f5f5f5;
+    padding: 32px 24px;
+}
+
+.calendar > *{
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    place-items: center;
+    gap: 4px;
+}
+
+.days,
+.months{
+    margin: 8px 0;
+}
+
+.years{
+    grid-template-columns: 75px 150px 75px;
+}
+
+.years > p{
+    opacity: .5;
+}
+
+.years .current,
+.current{
+    font-weight: bold;
+    font-size: 17px;
+    opacity: 1;
+}
+
+.days{
+    color: rgb(245, 191, 91);
+    opacity: .8;
+}
+
+.dates > p{
+    width: 100%;
+    padding: 4px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.event{
+    background: rgb(245, 191, 91);
+    border: 4px double black;
+}
+
+.today{
+    background: rgb(204, 250, 76);
+    color: white;
+    border: 6px double black;
+}
+
+.events section > div{
+    width: 250px;
+    align-items: center;
+    justify-content: space-between;
+}
