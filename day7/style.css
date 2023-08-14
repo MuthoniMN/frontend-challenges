@@ -1,3 +1,6 @@
+*{
+    font-family: 'Abel', sans-serif;
+}
 .flexbox{
     display: flex;
 }
