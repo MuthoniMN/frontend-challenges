@@ -1,11 +1,15 @@
 *{
+    text-transform: uppercase;
     font-family: 'Abel', sans-serif;
 }
+
 .flexbox{
     display: flex;
 }
 
 .calendar{
+    height: fit-content;
+    align-self: center;
     background: rgb(61, 60, 60);
     color: #f5f5f5;
     padding: 32px 24px;
@@ -48,6 +52,11 @@
     padding: 4px;
     border-radius: 50%;
     text-align: center;
+    opacity: .5;
+}
+
+.dates > p.active{
+    opacity: 1;
 }
 
 .event{
@@ -61,8 +70,57 @@
     border: 6px double black;
 }
 
+.events{
+    width: 360px;
+    color: rgb(1, 1, 29);
+}
+
+.events h1{
+    width: 100%;
+    margin: 0;
+    padding: 32px;
+    text-align: center;
+    background: rgb(245, 191, 91);
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .events section > div{
-    width: 250px;
+    width: 100%;
+    margin: 0 0 16px;
+    padding: 4px 24px;
     align-items: center;
-    justify-content: space-between;
+    gap: 24px;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.events section{
+    height: 400px;
+    margin: 0;
+    background: rgb(236, 93, 83);
+}
+
+.events section > div div{
+    flex-basis: 50%;
+}
+
+.fa-xl,
+.events section h4{
+    color: rgb(252, 224, 174);
+}
+
+.eventDate{
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+button{
+    display: block;
+    margin: 72px auto 0;
+    position: relative;
+    background: rgb(1, 1, 29);
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 8px 16px;
 }
